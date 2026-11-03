@@ -19,4 +19,4 @@ def test_home_endpoint(client):
 def test_suma_calculo(client):
     response = client.get('/calc/sum/10/15')
     data = response.get_json()
-    assert data['resultado'] == 999   # <--- ERROR INTENCIONAL A PROPOSITO
+    assert data['resultado'] == 25   # <--- ERROR INTENCIONAL A PROPOSITO FIXED
